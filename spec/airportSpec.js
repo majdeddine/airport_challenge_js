@@ -8,5 +8,9 @@ describe("Airport", function() {
 
     expect(airport.planes).toEqual(jasmine.any(Array))
   })
+  it("#land a plane",function(){
 
+      airport.land(plane)
+      expect(airport.planes).toContain(plane)
+    })
 });
